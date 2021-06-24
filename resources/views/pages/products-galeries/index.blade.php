@@ -25,7 +25,7 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             <td>{{ $item->product->name }}</td>
-                                            <td><img src="{{ url('storage/'.$item->photo_products) }}" alt="" /></td>
+                                            <td><img src="{{ url($item->photo_products) }}" alt="" /></td>
                                             <td>{{ $item->is_default ? 'Ya' : 'Tidak' }}</td>
                                             <td>
                                                 <form action="{{ route('product-galeries.destroy', $item->id) }}" method="post" class="d-inline">

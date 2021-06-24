@@ -29,7 +29,7 @@
                                             <td>{{ ++$i }}</td>
                                             <td>{{ $item->product->name }}</td>
                                             <td>
-                                                <img src="{{ Storage::url($item->photo_products) }}" alt="" />
+                                                <img src="{{ url($item->photo_products) }}" alt="" />
                                             </td>
                                             <td>{{ $item->is_default ? 'Ya' : 'Tidak' }}</td>
                                             <td>

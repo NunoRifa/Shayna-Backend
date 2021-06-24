@@ -22,7 +22,7 @@ class ProductGalery extends Model
         return $this->belongsTo(Product::class, 'products_id', 'id');
     }
 
-    public function getPhotoAttribute($value)
+    public function getPhotoProductsAttribute($value)
     {
         return url('storage/' . $value);
     }
